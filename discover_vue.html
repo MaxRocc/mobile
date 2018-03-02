@@ -10,27 +10,25 @@
 			<h1 v-bind:class="{red: active}">Ceci est l'input : {{ message }}</h1>
 			<h2 v-bind:class="{red: active}" v-if="button_input">Et voilà : {{ button_input }}</h2>
 			<input type="text" v-model="message">
-			<button v-on:click="affichage">Click me</button>
-			<input type="checkbox" v-model:value="active">Dead's red
+			<button v-on:click="affichageInput">Click me</button>
+			<input type="checkbox" v-model:value="active">Zed's red
+			<input type="checkbox" v-model:value="image">It's a me, Mario !
 			<br>
-			<img id="mario" src="mario-sm.jpg">
+			<img v-if="image" src="mario-sm.jpg">
 		</div><!-- fin de mon application Vue -->
 		<script>
 			new Vue({
 			  el: '#app',
 			  data: {
 		  		message: "",
-		  		button_input: "here",
+		  		button_input: "ce texte peut disparaître",
 			  	active: false,
-			  	image: true
+			  	image: false
 			  },
 			  methods: {
-			  	affichage: function(){
+			  	affichageInput: function(){
 			  		this.button_input = this.message;
-			  	/*dispImage: function(){
-			  		this. = this.;
-			  	}*/
-			  	}
+			  	},
 			  }
 			})
 		</script>
