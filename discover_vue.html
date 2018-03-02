@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<title>Validate Mobile</title>
+	<body>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="discover_vue.css">
+		<div id="app"><!-- début de mon application Vue -->
+			<h1 v-bind:class="{red: active}">Ceci est l'input : {{ message }}</h1>
+			<h2 v-bind:class="{red: active}" v-if="button_input">Et voilà : {{ button_input }}</h2>
+			<input type="text" v-model="message">
+			<button v-on:click="affichage">Click me</button>
+			<input type="checkbox" v-model:value="active">Dead's red
+			<br>
+			<img id="mario" src="mario-sm.jpg">
+		</div><!-- fin de mon application Vue -->
+		<script>
+			new Vue({
+			  el: '#app',
+			  data: {
+		  		message: "",
+		  		button_input: "here",
+			  	active: false,
+			  	image: true
+			  },
+			  methods: {
+			  	affichage: function(){
+			  		this.button_input = this.message;
+			  	/*dispImage: function(){
+			  		this. = this.;
+			  	}*/
+			  	}
+			  }
+			})
+		</script>
+	</body>
+</html>
