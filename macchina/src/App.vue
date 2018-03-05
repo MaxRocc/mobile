@@ -2,14 +2,10 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-    </ul>
+    <div>
+      <h2>Machine café 1</h2>
+      <toggle-button width="150"></toggle-button>
+    </div>
   </div>
 </template>
 
