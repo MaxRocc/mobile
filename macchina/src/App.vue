@@ -4,7 +4,7 @@
     <h1>{{ msg }}</h1>
     <div v-for="machine in machines">
         <h2>{{ machine.name }}</h2>
-        <toggle-button v-model="machine.active"></toggle-button>
+        <toggle-button width=150 v-model="machine.active"></toggle-button>
     </div>
     <cafe-component></cafe-component>
   </div>
