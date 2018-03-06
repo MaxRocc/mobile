@@ -3,9 +3,10 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <div v-for="machine in machines">
-      <h2>{{ machine.name }}</h2>
-      <toggle-button width=150 v-on:click="machine.active = ! machine.active"></toggle-button>
+        <h2>{{ machine.name }}</h2>
+        <toggle-button v-model="machine.active"></toggle-button>
     </div>
+    <cafe-component></cafe-component>
   </div>
 </template>
 
@@ -17,17 +18,17 @@ export default {
       msg: 'Appli de gestion des machines à café',
       machines : [
         {
-          name: 'Café',
-          active: true},
-        {
-          name: 'Thé',
+          name: 'Machine 1',
           active: false},
         {
-          name: 'Latte',
+          name: 'Machine 2',
+          active: false},
+        {
+          name: 'Machine 3',
           active: false}
       ]
     }
-  }
+  },
 }
 </script>
 
