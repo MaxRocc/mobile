@@ -8,6 +8,7 @@
 
 <script>
     export default {
+      props: ['machines'],
       data (){
         return {
           msg: 'Hello Work'
