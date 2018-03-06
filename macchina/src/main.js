@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+import machine from './Machines.vue' //importing Component's div called Machines, stored in machines.vue in the same folder
 import ToggleButton from 'vue-js-toggle-button'
 Vue.use(ToggleButton)
-
-Vue.component('cafe-component', {
-  template: '<h2><hr><toggle-button>Wesh</toggle-button></h2>'
-})
+Vue.component('toto', machine);
 
 new Vue({
   el: '#app',

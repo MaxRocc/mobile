@@ -6,7 +6,7 @@
         <h2>{{ machine.name }}</h2>
         <toggle-button width=150 v-model="machine.active"></toggle-button>
     </div>
-    <cafe-component></cafe-component>
+    <toto></toto>
   </div>
 </template>
 
