@@ -4,9 +4,9 @@
     <h1>{{ msg }}</h1>
     <div v-for="machine in machines">
         <h2>{{ machine.name }}</h2>
-        <toggle-button width=150 v-model="machine.active"></toggle-button>
+        <toggle-button :width="150" v-model="machine.active"></toggle-button>
     </div>
-    <machine v-bind:machines="machines"></machine>
+    <machine v-bind:machine="machines"></machine>
   </div>
 </template>
 
