@@ -1,5 +1,5 @@
 <template>
-  <div id="map">
+  <div id="mapmachines">
     <h1>
       Carte des machines
     </h1>
@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        name: "map"
+        name: "mapMachines"
     }
 </script>
 

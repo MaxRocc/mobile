@@ -5,11 +5,11 @@
     <div>
       <button id="button1" v-on:click="onMachinesListClick()">Consulter la liste des machines</button>
     </div>
+    <router-view></router-view>
     <div>
       <button id="button2" v-on:click="onMapClick()">Voir la carte</button>
     </div>
-    <list-machines></list-machines>
-    <map-machines></map-machines>
+
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     onMachinesListClick() {
-      alert('list-machines')
+      alert('What do you want ?')
     },
     onMapClick() {
       alert('You clicked \'Voir la carte\'')

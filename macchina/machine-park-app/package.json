@@ -1,6 +1,6 @@
 {
   "name": "machine-park-app",
-  "description": "an app to deal with the park of machines",
+  "description": "an app to manage the park of machines",
   "version": "1.0.0",
   "author": "Maxime Roccisano",
   "license": "MIT",
