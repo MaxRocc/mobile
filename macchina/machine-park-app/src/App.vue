@@ -3,10 +3,10 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <div>
-      <button v-on:click="onMachinesListClick()">Consulter la liste des machines</button>
+      <button id="button1" v-on:click="onMachinesListClick()">Consulter la liste des machines</button>
     </div>
     <div>
-      <button v-on:click="onMapClick()">Voir la carte</button>
+      <button id="button2" v-on:click="onMapClick()">Voir la carte</button>
     </div>
     <list-machines></list-machines>
     <map-machines></map-machines>
@@ -60,7 +60,7 @@ a {
   color: #42b983;
 }
 
-button1 {
+#button1 {
   background-color: #950980;
   padding: 15px 32px;
   cursor: pointer;
@@ -68,7 +68,7 @@ button1 {
   color: wheat;
 }
 
-button2 {
+#button2 {
   background-color: #950980;
   padding: 15px 32px;
   cursor: pointer;
