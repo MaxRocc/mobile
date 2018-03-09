@@ -6,7 +6,7 @@
         <h2>{{ machine.name }}</h2>
         <toggle-button :width="150" v-model="machine.active"></toggle-button>
     </div>
-    <machine v-bind:machine="machines"></machine>
+    <machine v-bind:machine-list="machines"></machine>
   </div>
 </template>
 
